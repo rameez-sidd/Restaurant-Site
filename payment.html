@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/tabicon.png" width="31px">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/payment-repsonsive.css">
+    <script src="https://kit.fontawesome.com/5678c3e1ef.js" crossorigin="anonymous"></script>
+    <title>Grill & Chill - Make Payment</title>
+</head>
+<body>
+    <section id="payment-section">
+        <div id="payment-container">
+            <div class="payment-items" id="payment-heading">Make Payment</div>
+            <div class="payment-items" id="payment-form">
+                <form id="form-container" onsubmit="return validateExpDate()" action="confirm.html" name="payment-form" autocomplete="off">
+                    <div class="form-items" id="credit-card-content">
+                        <div class="credit-card-content-items" id="credit-card-content-heading">CREDIT CARD REQUIRED</div>
+                        <div class="credit-card-content-items" id="credit-card-content-para">This restaurant requires a credit card to
+                            secure this reservation. All credit card information will be processed securely. No-shows or cancellations less
+                            than 1 day in advance will be subject to a charge of $25 per person.</div>
+                    </div>
+                    <div class="form-items">
+                        <input type="text" name="credit-card-name" id="credit-card-name" maxlength="50" placeholder="Name on card"
+                            pattern="[A-Za-z ]{1,50}" title="Enter Your Name Given On Card" required>
+                    </div>
+                    <div class="form-items">
+                        <input type="text" name="credit-card-number" id="credit-card-number" maxlength="19" placeholder="1234 1234 1234 1234" pattern="[0-9]{4}[ ]{1}[0-9]{4}[ ]{1}[0-9]{4}[ ]{1}[0-9]{4}" title="1234 1234 1234 1234" required>
+                    </div>
+                    <div class="form-items" id="exp-cvv-container">
+                        <input type="text" name="exp-date" id="exp-date" maxlength="5" placeholder="MM/YY" pattern = "(?:0[1-9]|1[0-2])/[0-9]{2}" title="MM/YY" required oninput="getSelectedExpDate()" onkeyup="formatExpDate(event)">
+                        <input type="text" name="cvv" id="cvv" maxlength="3" placeholder="CVV" pattern="[0-9]{3}" title="3 digit CVV" required>
+                    </div>
+                    <div class="form-items">
+                        <input type="text" name="postal-code" id="postal-code" maxlength="6" placeholder="Postal code" pattern="[0-9]{6}" title="6 digit postal code" required>
+                    </div>
+                    <div class="form-items">
+                        <input type="submit" value="Confirm Reservation" name="submit" id="submit-btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/payment.js"></script>
+</body>
+</html>

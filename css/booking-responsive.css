@@ -1,0 +1,79 @@
+@media (max-width:1200px){
+    #form-container{
+        width: 75%;
+    }
+}
+@media (max-width:1150px) {
+    #form-container {
+        width: 80%;
+    }
+}
+@media (max-width:1100px) {
+    #book-container {
+        width: 60vw;
+    }
+}
+@media (max-width:900px) {
+    #book-container {
+        width: 65vw;
+    }
+}
+@media (max-width:800px) {
+    #book-container {
+        width: 70vw;
+    }
+}
+@media (max-width:700px) {
+    #book-container {
+        width: 75vw;
+    }
+}
+@media (max-width:600px) {
+    #book-container {
+        width: 80vw;
+    }
+}
+@media (max-width:580px) {
+    #book-container {
+        width: 85vw;
+    }
+}
+@media (max-width:550px) {
+    #form-container {
+        width: 85%;
+    }
+}
+@media (max-width:500px) {
+    #book-container {
+        width: 90vw;
+    }
+}
+@media (max-width:480px) {
+    #form-container {
+        width: 90%;
+    }
+}
+@media (max-width:456px) {
+    #book-container {
+        width: 95vw;
+    }
+    #book-heading {
+        font-size: 1.4rem;
+    }
+    input:not(input[type="checkbox"]){
+        padding: 5px;
+    }
+    select {
+        padding: 2px;
+        
+    }
+    #email-update-label {
+        font-size: 0.8rem;
+    }
+    #email-update-container{
+        align-items: flex-start;
+    }
+    #email-update{
+        margin-top: 4px;
+    }
+}

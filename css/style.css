@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@400;500;600&family=Satisfy&family=Yellowtail&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Universal Link Styling */
+a:link,
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Mobile Header Section */
+#mobile-header-section{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: all 0.5s;
+}
+#mobile-header-container{
+    margin: 17px 0;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile-header-items{
+    color: #ffffff;
+}
+#menu-icon{
+    font-size: 25px;
+}
+#navbar-section{
+    position: fixed;
+    top: -100%;
+    display: none;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    transition: all .5s;
+    z-index: 0;
+    height: calc(100vh - 59px);
+}
+#navbar-container{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+/* Welcome Section */
+#welcome-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/welcome-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#header{
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 40px;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.header-items:hover{
+    color: rgb(228, 166, 9);
+}
+#welcome-message{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#welcome-message-container{
+    margin: 230px 0 200px;
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+#title{
+    font-size: 5rem;
+    margin-bottom: -20px;
+    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Satisfy', cursive; */
+}
+#subtitle{
+    font-size: 1.3rem;
+}
+#book-table-btn:link, #book-table-btn:visited{
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid darkgoldenrod;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: darkgoldenrod;
+}
+#book-table-btn:hover, #book-table-btn:active{
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+/* Quotes Section */
+#quotes-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgoldenrod;
+}
+#quotes-container{
+    margin: 60px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+}
+#quotes-icon-left, #quotes-icon-right{
+    font-size: 3.5rem;
+}
+#quotes-icon-right{
+    visibility: hidden;
+}
+#quotes-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#the-quote{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+#the-author{
+    font-style: italic;
+    color: #ffffff;
+}
+
+/* About Us Section */
+#about-us-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #231F20;
+    color: #ffffff;
+}
+#about-us-container{
+    margin: 80px 0;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+#about-us-heading-plus-underline, #menu-heading-plus-underline, #chef-heading-plus-underline, #gallery-heading-plus-underline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+#about-us-heading, #menu-heading, #article-heading, #chef-heading, #gallery-heading{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: darkgoldenrod;
+}
+#about-us-underline, #menu-underline, #article-underline, #chef-underline, #gallery-underline{
+    width: 60px;
+    border: 1px solid white;
+    background-color: #ffffff;
+}
+#about-us-para{
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 29px;
+    font-weight: 400;
+}
+
+/* Menu Section */
+#menu-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+#menu-container{
+    margin: 80px 0;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+#menu-gallery{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 90vw;
+    align-content:center;
+    justify-content: space-around;
+    grid-gap: 70px 0;
+}
+.menu-gallery-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    color: #ffffff;
+}
+.menu-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 250px;
+    min-height: 250px;
+}
+.menu-img{
+    border-radius: 5px;
+}
+.menu-img:hover{
+    width: 240px;
+}
+.menu-name{
+    font-size: 1.2rem;
+    font-weight: 450;
+}
+.menu-price{
+    color: rgb(228, 166, 9);
+}
+
+/* Article Section */
+#article-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    color: #ffffff;
+}
+#bg-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+#article-container{
+    margin: 80px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    width: 85vw;
+    gap: 40px;
+}
+#article-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+#article-para{
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 29px;
+}
+#article-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.article-img{
+    border-radius: 5px;
+}
+
+/* Testimonial Section */
+#testimonial-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgoldenrod;
+}
+#testimonial-container{
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#testimonial-heading-plus-underline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#testimonial-heading{
+    max-width: 87vw;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+#testimonial-underline{
+    width: 60px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #ffffff;
+}
+#testimonial-gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 1fr;
+    align-content: center;
+    justify-content: space-around;
+    grid-gap:70px;
+    width: 90vw;
+
+}
+.testimonial-gallery-items{
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #ffffff;
+    background-color: rgba(128, 92, 2, 0.377);
+    box-shadow: 0 0 4px 1px rgb(0 0 0 / 25%);
+}
+.testimonial-content{
+    text-align: justify;
+}
+.quotes-icon-left{
+    font-size: 2rem;
+}
+
+/* Chef Section */
+#chef-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #231F20;
+    color: #ffffff;
+}
+#chef-container{
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    gap: 40px;
+}
+#chef-gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    justify-content: space-around;
+    grid-gap: 70px 0;
+    width: 90vw;
+}
+.chef-gallery-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.chef-img{
+    border-radius: 5px;
+}
+.chef-name{
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+.chef-post{
+    color: rgb(231, 178, 43);
+}
+
+/* Gallery Section */
+#gallery-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+#gallery-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin: 80px 0;
+    gap: 40px;
+}
+#gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-content: center;
+    grid-gap: 10px;
+    width: 90vw;
+}
+.gallery-grid-items{
+    border-radius: 5px;
+    padding: 110px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-grid-items:hover{
+    filter: brightness(130%);
+}
+
+#one {
+    grid-area: 1 / 1 / 2 / 3;
+    background-image: url("https://i.ibb.co/rwXVfb7/k-10.jpg");
+}
+
+#two {
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url("https://i.ibb.co/K2HDZpp/3.jpg");
+}
+
+#three {
+    grid-area: 1 / 4 / 2 / 5;
+    background-image: url("https://i.ibb.co/cbB7knv/choose-a-recessed-look.jpg");
+}
+
+#four {
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url("https://i.ibb.co/BcLMTQt/living-our-best-life-picture-id1198045232-k-20-m-1198045232-s-612x612-w-0-h-ZHIs0t-Nw229p-6-CTs4-Rsw.jpg");
+}
+
+#five {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url("https://i.ibb.co/QCqtywV/TEMP-gallery-3.jpg");
+    
+}
+
+#six {
+    grid-area: 2 / 3 / 4 / 4;
+    background-image: url("https://i.ibb.co/MnXpNZz/6129699.jpg");
+}
+
+#seven {
+    grid-area: 2 / 4 / 3 / 5;
+    background-image: url("https://i.ibb.co/f4c2YWj/pexels-chan-walrus-958545.jpg");
+}
+
+#eight {
+    grid-area: 3 / 1 / 5 / 2;
+    background-image: url("https://i.ibb.co/sg4LWrm/restaurant-alexander-the-hague-199127.jpg");
+}
+
+#nine {
+    grid-area: 3 / 2 / 4 / 3;
+    background-image: url("https://i.ibb.co/bW4j5yX/concentrated-female-chef-garnishing-food-in-kitchen2.jpg");
+}
+
+#ten {
+    grid-area: 3 / 4 / 4 / 5;
+    background-image: url("https://i.ibb.co/ZXLZLmp/delicious-non-veg-dish.jpg");
+}
+
+#eleven {
+    grid-area: 4 / 2 / 5 / 3;
+    background-image: url("https://i.ibb.co/ZN6WbB6/grid.jpg");
+}
+
+#twelve {
+    grid-area: 4 / 3 / 5 / 5;
+    background-image: url("https://i.ibb.co/CwGbZYL/portrait-of-a-business-owner-smiling-with-his-staff-at-a-restaurant-picture-id1368500097-b-1-k-20-m.jpg");
+}
+
+/* Footer Section */
+#footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgoldenrod;
+}
+#footer-container{
+    margin: 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.footer-headings{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#footer-book-btn{
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#footer-book-btn:link, #footer-book-btn:visited{
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+#footer-book-btn:hover, #footer-book-btn:active{
+    background-color: black;
+    color: #ffffff;
+}
+.footer-para{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#footer-email-btn{
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#footer-email-btn:link, #footer-email-btn:visited{
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+#footer-email-btn:hover, #footer-email-btn:active{
+    background-color: black;
+    color: #ffffff;
+}
