@@ -440,7 +440,7 @@ a:visited {
 
 #one {
     grid-area: 1 / 1 / 2 / 3;
-    background-image: url("../images/one.jpg");
+    background-image: url("one.jpg");
 }
 
 #two {
