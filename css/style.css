@@ -440,7 +440,7 @@ a:visited {
 
 #one {
     grid-area: 1 / 1 / 2 / 3;
-    background-image: url("one.jpg");
+    background-image: url("../images/one.jpg");
 }
 
 #two {
@@ -496,7 +496,7 @@ a:visited {
 
 #twelve {
     grid-area: 4 / 3 / 5 / 5;
-    background-image: url("https://i.ibb.co/CwGbZYL/portrait-of-a-business-owner-smiling-with-his-staff-at-a-restaurant-picture-id1368500097-b-1-k-20-m.jpg");
+    background-image: url("../images/twelve.jpg");
     background-position: center top;
 }
 
