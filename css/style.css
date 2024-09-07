@@ -235,9 +235,11 @@ a:visited {
 }
 .menu-img{
     border-radius: 5px;
+    width: 250px;
+    height: 250px;
 }
 .menu-img:hover{
-    width: 240px;
+    transform: scale(0.96);
 }
 .menu-name{
     font-size: 1.2rem;
@@ -271,7 +273,7 @@ a:visited {
     margin: 80px 0;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     width: 85vw;
     gap: 40px;
@@ -281,7 +283,7 @@ a:visited {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 }
 #article-para{
     text-align: justify;
@@ -346,7 +348,7 @@ a:visited {
 }
 .testimonial-gallery-items{
     border-radius: 5px;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -440,63 +442,63 @@ a:visited {
 
 #one {
     grid-area: 1 / 1 / 2 / 3;
-    background-image: url("../images/one.jpg");
+    background-image: url("../images/Gallery/one.jpg");
 }
 
 #two {
     grid-area: 1 / 3 / 2 / 4;
-    background-image: url("../images/two.jpg");
+    background-image: url("../images/Gallery/two.jpg");
 }
 
 #three {
     grid-area: 1 / 4 / 2 / 5;
-    background-image: url("../images/three.jpg");
+    background-image: url("../images/Gallery/three.jpg");
 }
 
 #four {
     grid-area: 2 / 1 / 3 / 2;
-    background-image: url("../images/four.jpg");
+    background-image: url("../images/Gallery/four.jpg");
 }
 
 #five {
     grid-area: 2 / 2 / 3 / 3;
-    background-image: url("../images/five.jpg");
+    background-image: url("../images/Gallery/five.jpg");
     
 }
 
 #six {
     grid-area: 2 / 3 / 4 / 4;
-    background-image: url("../images/six.jpg");
+    background-image: url("../images/Gallery/six.jpg");
 }
 
 #seven {
     grid-area: 2 / 4 / 3 / 5;
-    background-image: url("../images/seven.jpg");
+    background-image: url("../images/Gallery/seven.jpg");
 }
 
 #eight {
     grid-area: 3 / 1 / 5 / 2;
-    background-image: url("../images/eight.jpg");
+    background-image: url("../images/Gallery/eight.jpg");
 }
 
 #nine {
     grid-area: 3 / 2 / 4 / 3;
-    background-image: url("../images/nine.jpg");
+    background-image: url("../images/Gallery/nine.jpg");
 }
 
 #ten {
     grid-area: 3 / 4 / 4 / 5;
-    background-image: url("../images/ten.jpg");
+    background-image: url("../images/Gallery/ten.jpg");
 }
 
 #eleven {
     grid-area: 4 / 2 / 5 / 3;
-    background-image: url("../images/eleven.jpg");
+    background-image: url("../images/Gallery/eleven.jpg");
 }
 
 #twelve {
     grid-area: 4 / 3 / 5 / 5;
-    background-image: url("../images/twelve.jpg");
+    background-image: url("../images/Gallery/twelve.jpg");
     background-position: center top;
 }
 
